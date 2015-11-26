@@ -1,6 +1,7 @@
 ![](https://cloud.githubusercontent.com/assets/110953/7877439/6a69d03e-0590-11e5-9fac-c614246606de.png)
 ## Polymer Starter Kit based personal profile site
 
+
 > A starting point for building web applications with Polymer 1.0
 
 ### Included out of the box:
@@ -21,6 +22,7 @@ See latest Polymer Starter Kit Demo (from master) at http://polymerelements.gith
 To take advantage of Polymer Starter Kit you need to:
 
 1. Get a copy of the code.
+
 2. Install the dependencies if you don't already have them.
 3. Modify the application to your liking.
 4. Deploy your production code.
