@@ -82,7 +82,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <iron-icon icon="social:person"></iron-icon>
             <span>About Me</span>
           </a>
-          <a data-route="users" href="users">
+          <a data-route="myeducation" href="myeducation">
             <iron-icon icon="social:school"></iron-icon>
             <span>Education</span>
           </a>
@@ -172,14 +172,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               </paper-material>
             </section>
 
-            <section data-route="users">
+            <section data-route="myeducation">
               <paper-material elevation="1">
-                <h2 class="page-title">Users</h2>
-                <p>This is the users section</p>
-                <a href$="{{baseUrl}}users/Addy">Addy</a><br>
-                <a href$="{{baseUrl}}users/Rob">Rob</a><br>
-                <a href$="{{baseUrl}}users/Chuck">Chuck</a><br>
-                <a href$="{{baseUrl}}users/Sam">Sam</a>
+                <h2 class="page-title">Education</h2>
+                <my-education></my-education>
               </paper-material>
             </section>
             <section data-route="myprojects">

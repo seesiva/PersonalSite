@@ -8,7 +8,6 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 -->
 <link rel="import" href="../../bower_components/polymer/polymer.html">
-
 <dom-module id="my-education">
   <template>
     <style>
@@ -16,14 +15,23 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         display: block;
       }
     </style>
-    <ul>
-      <template is="dom-repeat" items="{{items}}">
-        <li><span class="paper-font-body1">{{item}}</span></li>
-      </template>
-    </ul>
+  
+
+  <paper-tabs selected="{{selected}}" layout>
+    <template is="dom-repeat" items="{{items}}">
+        <paper-tab>{{item}}</paper-tab>
+    </template>
+  </paper-tabs>
+
+<iron-pages selected="{{selected}}">
+  <div>Page 1</div>
+  <div>Page 2</div>
+  <div>Page 3</div>
+</iron-pages>
+  
   </template>
 
-  <script>
+<script>
     (function() {
       'use strict';
   
@@ -37,14 +45,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         },
         ready: function() {
           this.items = [
-            'Personal Overview',
-            'Education Background',
-            'Companies I have worked for',
-            'Various projects I have worked ',
-            'Technical Skills',
-            'Awards & Certifications',
-            'Blogs',
-            'Social Media'
+            'Post Graduation (MBA)',
+            'Graducation (BE)',
+            'Higher School',
+            'Secondary School'
           ];
         }
       });
